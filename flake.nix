@@ -24,6 +24,7 @@
             llvmPackages.bintools
             nil # Nix language server
             nixpkgs-fmt
+            nodejs
             (rust-bin.selectLatestNightlyWith (toolchain:
               toolchain.default.override {
                 extensions = [ "rust-analyzer" "rust-src" ];

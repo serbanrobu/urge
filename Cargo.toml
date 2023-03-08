@@ -12,9 +12,7 @@ actix-web = { version = "4", optional = true, features = ["macros"] }
 console_error_panic_hook = "0.1"
 console_log = "0.2"
 cfg-if = "1"
-leptos = { version = "0.2", default-features = false, features = [
-  "serde",
-] }
+leptos = { version = "0.2", default-features = false, features = ["serde"] }
 leptos_meta = { version = "0.2", default-features = false }
 leptos_actix = { version = "0.2", optional = true }
 leptos_router = { version = "0.2", default-features = false }
@@ -42,7 +40,7 @@ site-root = "target/site"
 # Defaults to pkg	
 site-pkg-dir = "pkg"
 # [Optional] The source CSS file. If it ends with .sass or .scss then it will be compiled by dart-sass into CSS. The CSS is optimized by Lightning CSS before being written to <site-root>/<site-pkg>/app.css
-style-file = "style/main.scss"
+style-file = "style/main.css"
 # Assets source dir. All files found here will be copied and synchronized to site-root.
 # The assets-dir cannot have a sub directory with the same name/path as site-pkg-dir.
 #
