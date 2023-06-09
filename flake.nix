@@ -25,6 +25,7 @@
             nil # Nix language server
             nixpkgs-fmt
             nodejs
+            nodePackages.vscode-langservers-extracted
             (rust-bin.selectLatestNightlyWith (toolchain:
               toolchain.default.override {
                 extensions = [ "rust-analyzer" "rust-src" ];
